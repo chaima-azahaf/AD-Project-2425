@@ -1,0 +1,9 @@
+C:\Users\chaia\source\repos\AD-Project-2425\ConcertTickets\ConcertTickets\obj\Debug\net8.0\ConcertTickets.csproj.AssemblyReference.cache
+C:\Users\chaia\source\repos\AD-Project-2425\ConcertTickets\ConcertTickets\obj\Debug\net8.0\ConcertTickets.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chaia\source\repos\AD-Project-2425\ConcertTickets\ConcertTickets\obj\Debug\net8.0\ConcertTickets.AssemblyInfoInputs.cache
+C:\Users\chaia\source\repos\AD-Project-2425\ConcertTickets\ConcertTickets\obj\Debug\net8.0\ConcertTickets.AssemblyInfo.cs
+C:\Users\chaia\source\repos\AD-Project-2425\ConcertTickets\ConcertTickets\obj\Debug\net8.0\ConcertTickets.csproj.CoreCompileInputs.cache
+C:\Users\chaia\source\repos\AD-Project-2425\ConcertTickets\ConcertTickets\obj\Debug\net8.0\ConcertTickets.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\chaia\source\repos\AD-Project-2425\ConcertTickets\ConcertTickets\obj\Debug\net8.0\ConcertTickets.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\chaia\source\repos\AD-Project-2425\ConcertTickets\ConcertTickets\obj\Debug\net8.0\ConcertTickets.RazorAssemblyInfo.cache
+C:\Users\chaia\source\repos\AD-Project-2425\ConcertTickets\ConcertTickets\obj\Debug\net8.0\ConcertTickets.RazorAssemblyInfo.cs

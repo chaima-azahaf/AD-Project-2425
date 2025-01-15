@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-ConcertTickets-84c59e14-6aea-4ed3-bd99-b9962b99be39</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\img\CharliXCX.png" />
+    <None Include="wwwroot\img\Coldplay.png" />
+    <None Include="wwwroot\img\CompactDiskDummies.png" />
+    <None Include="wwwroot\img\DuaLipa.png" />
+    <None Include="wwwroot\img\NickCaveAndTheBadSeeds.png" />
+    <None Include="wwwroot\img\nopic.png" />
+    <None Include="wwwroot\img\OdiseeConcertsLogo.png" />
+    <None Include="wwwroot\img\TaylorSwift.png" />
+    <None Include="wwwroot\img\TheLastDinnerParty.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.11" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
+  </ItemGroup>
+
+</Project>

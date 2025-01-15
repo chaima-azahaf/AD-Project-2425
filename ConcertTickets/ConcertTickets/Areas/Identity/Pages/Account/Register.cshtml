@@ -1,0 +1,59 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Registreren";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="row">
+    <form asp-area="Identity" asp-page="/Account/Register" method="post">
+        @Html.AntiForgeryToken()
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <!-- Voornaam -->
+            <div class="form-floating mb-3">
+                <input asp-for="Input.FirstName" class="form-control" placeholder="Voornaam" aria-required="true" />
+                <label asp-for="Input.FirstName">Voornaam</label>
+                <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+            </div>
+
+            <!-- Familienaam -->
+            <div class="form-floating mb-3">
+                <input asp-for="Input.LastName" class="form-control" placeholder="Familienaam" aria-required="true" />
+                <label asp-for="Input.LastName">Familienaam</label>
+                <span asp-validation-for="Input.LastName" class="text-danger"></span>
+            </div>
+
+            <!-- Lidkaartnummer (optioneel) -->
+            <div class="form-floating mb-3">
+                <input asp-for="Input.MemberCardNumber" class="form-control" placeholder="Lidkaartnummer" />
+                <label asp-for="Input.MemberCardNumber">Lidkaartnummer (optioneel)</label>
+                <span asp-validation-for="Input.MemberCardNumber" class="text-danger"></span>
+            </div>
+
+        <!-- E-mailadres -->
+        <div class="form-floating mb-3">
+            <input asp-for="Input.Email" class="form-control" placeholder="E-mailadres" aria-required="true" />
+            <label asp-for="Input.Email">E-mailadres</label>
+            <span asp-validation-for="Input.Email" class="text-danger"></span>
+        </div>
+
+        <!-- Wachtwoord -->
+        <div class="form-floating mb-3">
+            <input asp-for="Input.Password" class="form-control" type="password" placeholder="Wachtwoord" aria-required="true" />
+            <label asp-for="Input.Password">Wachtwoord</label>
+            <span asp-validation-for="Input.Password" class="text-danger"></span>
+        </div>
+
+        <!-- Bevestig wachtwoord -->
+        <div class="form-floating mb-3">
+            <input asp-for="Input.ConfirmPassword" class="form-control" type="password" placeholder="Bevestig wachtwoord" aria-required="true" />
+            <label asp-for="Input.ConfirmPassword">Bevestig wachtwoord</label>
+            <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+        </div>
+
+            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Inschrijven</button>
+        </form>
+    </div>
+</div>
