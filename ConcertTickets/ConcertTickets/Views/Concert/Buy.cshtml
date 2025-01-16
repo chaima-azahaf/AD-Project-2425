@@ -1,36 +1,30 @@
 ﻿@model ConcertTickets.ViewModels.ConcertViewModel
 
-<div class="container mt-4">
-    <a asp-action="Index" class="btn btn-secondary mb-3">Terug naar overzicht</a>
+<div class="container mt-5">
     <div class="row">
-        <div class="col-md-6">
-            <img src="~/images/concert-placeholder.jpg" class="img-fluid rounded" alt="@Model.Artist">
+        <div class="col-md-4">
+            <img src="@Model.ArtistPicture" alt="@Model.Artist" class="img-fluid rounded">
+            <h2>@Model.Artist</h2>
+            <p>@Model.Location</p>
+            <p class="text-danger fw-bold">@Model.Date.ToString("dd MMM yyyy")</p>
         </div>
-        <div class="col-md-6">
-            <h2>Koop tickets voor @Model.Artist</h2>
-            <p><strong>Locatie:</strong> @Model.Location</p>
-            <p><strong>Datum:</strong> @Model.Date.ToString("dd MMM yyyy")</p>
-            <hr />
+        <div class="col-md-8">
+            <h3>Ticket Types</h3>
             <ul class="list-group">
                 @foreach (var offer in Model.TicketOffers)
                 {
                     <li class="list-group-item d-flex justify-content-between align-items-center">
-                        <div>
-                            <strong>@offer.TicketType</strong><br />
-                            <small>Prijs: €@offer.Price</small>
-                        </div>
-                        <span class="badge bg-primary">@offer.NumTickets tickets beschikbaar</span>
-                        @if (offer.NumTickets > 0)
-                        {
-                            <a asp-action="Create" asp-controller="Order" asp-route-concertId="@Model.Id" asp-route-ticketType="@offer.TicketType" class="btn btn-primary">Koop tickets</a>
-                        }
-                        else
-                        {
-                            <span class="btn btn-danger disabled">Uitverkocht</span>
-                        }
+                        <span>
+                            <strong>@offer.TicketType</strong> - &euro; @offer.Price
+                        </span>
+                        <span class="badge bg-primary">@offer.AvailableTickets tickets beschikbaar</span>
+                        <a class="btn btn-primary" href="@Url.Action("Create", "Order", new { ticketOfferId = offer.Id })">
+                            Koop tickets
+                        </a>
                     </li>
                 }
             </ul>
         </div>
     </div>
+    <a href="@Url.Action("Index", "Concert")" class="btn btn-secondary mt-3">Terug naar overzicht</a>
 </div>

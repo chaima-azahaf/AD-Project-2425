@@ -1,33 +1,35 @@
 ﻿@model IEnumerable<ConcertTickets.ViewModels.ConcertViewModel>
 
-<div class="container mt-4">
-    <h1>Concert overzicht</h1>
-    <div class="row">
-        @foreach (var concert in Model)
-        {
-            <div class="col-md-3">
-                <div class="card mb-4 shadow-sm">
-                    <img src="~/images/concert-placeholder.jpg" class="card-img-top" alt="@concert.Artist">
-                    <div class="card-body">
-                        <h5 class="card-title">@concert.Artist</h5>
-                        <p class="card-text">@concert.Location</p>
-                        <p><strong>Datum:</strong> @concert.Date.ToString("dd MMM yyyy")</p>
-
-                        @if (concert.AvailableTickets > 10)
+<h1>Concert overzicht</h1>
+<div class="row">
+    @foreach (var concert in Model)
+    {
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="@concert.ArtistPictureUrl" alt="@concert.Artist">
+                <div class="card-body">
+                    <h5 class="card-title">@concert.Artist</h5>
+                    <p class="card-text">@concert.Location</p>
+                    <p class="card-text">@concert.Date.ToString("dd MMM yyyy")</p>
+                    <p class="card-text">
+                        <strong>@concert.TotalTicketsAvailable tickets beschikbaar</strong>
+                    </p>
+                    <a href="@Url.Action("Buy", "Concert", new { id = concert.Id })" class="btn btn-primary">
+                        @if (concert.TotalTicketsAvailable > 10)
                         {
-                            <a href="/Concert/Buy/@concert.Id" class="btn btn-primary">Koop tickets</a>
+                            <span>Koop tickets</span>
                         }
-                        else if (concert.AvailableTickets > 0)
+                        else if (concert.TotalTicketsAvailable > 0)
                         {
-                            <a href="/Concert/Buy/@concert.Id" class="btn btn-warning">Laatste tickets!</a>
+                            <span>Laatste tickets!</span>
                         }
                         else
                         {
-                            <span class="btn btn-danger">Uitverkocht!</span>
+                            <span>Uitverkocht</span>
                         }
-                    </div>
+                    </a>
                 </div>
             </div>
-        }
-    </div>
+        </div>
+    }
 </div>

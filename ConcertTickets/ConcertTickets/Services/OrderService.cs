@@ -19,45 +19,55 @@ namespace ConcertTickets.Services
             {
                 UserId = model.UserId,
                 UserName = model.UserName,
-                ConcertId = model.ConcertId,
-                TicketType = model.TicketType,
+                TicketOfferId = model.TicketOfferId,
                 NumberOfTickets = model.NumberOfTickets,
-                TotalPrice = model.NumberOfTickets * model.Price,
+                TotalPrice = model.FinalPrice,
                 Paid = false
             };
 
-            await _orderRepository.AddAsync(order);
-            await _orderRepository.SaveChangesAsync();
-            return order.Id;
+            return await _orderRepository.CreateOrderAsync(order);
         }
 
+        public Task GetOrderById(int orderId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<OrderViewModel> GetOrderByIdAsync(int id)
+        {
+            var order = await _orderRepository.GetOrderByIdAsync(id);
+
+            if (order == null) return null;
+
+            return new OrderViewModel
+            {
+                OrderId = order.Id,
+                ConcertName = order.TicketOffer.Concert.Artist,
+                TicketType = order.TicketOffer.TicketType,
+                TotalPrice = (decimal)order.TotalPrice,
+                UserName = order.UserName,
+                Paid = order.Paid
+            };
+        }
 
         public async Task<IEnumerable<OrderViewModel>> GetOrdersByStatusAsync(bool paid)
         {
             var orders = await _orderRepository.GetOrdersByStatusAsync(paid);
-            return orders.Select(o => new OrderViewModel
+
+            return orders.Select(order => new OrderViewModel
             {
-                Id = o.Id,
-                UserId = o.UserId,
-                Paid = o.Paid
+                OrderId = order.Id,
+                ConcertName = order.TicketOffer.Concert.Artist,
+                TicketType = order.TicketOffer.TicketType,
+                TotalPrice = (decimal)order.TotalPrice,
+                UserName = order.UserName,
+                Paid = order.Paid
             });
         }
 
-        public async Task<OrderViewModel> GetOrderByIdAsync(int orderId)
+        public async Task UpdateOrderPaidStatusAsync(int orderId, bool paid)
         {
-            var order = await _orderRepository.GetOrderByIdAsync(orderId);
-            return order == null ? null : new OrderViewModel { Id = order.Id, Paid = order.Paid };
-        }
-
-        public async Task UpdatePaidStatusAsync(int orderId, bool paid)
-        {
-            var order = await _orderRepository.GetOrderByIdAsync(orderId);
-            if (order != null)
-            {
-                order.Paid = paid;
-                await _orderRepository.UpdateAsync(order);
-            }
+            await _orderRepository.UpdateOrderPaidStatusAsync(orderId, paid);
         }
     }
 }
-

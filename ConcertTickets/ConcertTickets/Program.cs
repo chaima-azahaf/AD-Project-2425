@@ -1,4 +1,6 @@
 using ConcertTickets.Models;
+using ConcertTickets.Repositories;
+using ConcertTickets.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,6 +18,16 @@ namespace ConcertTickets
                 options.UseSqlServer(connectionString));
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
+            // Dependency injection voor repositories
+            builder.Services.AddScoped<IConcertRepository, ConcertRepository>();
+            builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+            builder.Services.AddScoped<ITicketOfferRepository, TicketOfferRepository>();
+
+            // Dependency injection voor services
+            builder.Services.AddScoped<IConcertService, ConcertService>();
+            builder.Services.AddScoped<IOrderService, OrderService>();
+            builder.Services.AddScoped<ITicketOfferService, TicketOfferService>();
+
             // Voeg roles en CustomUser toe
             builder.Services.AddDefaultIdentity<CustomUser>(options =>
             {
@@ -26,6 +38,7 @@ namespace ConcertTickets
 
             builder.Services.AddControllersWithViews();
             builder.Services.AddRazorPages();
+
 
             var app = builder.Build();
 
@@ -48,6 +61,10 @@ namespace ConcertTickets
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
             app.MapRazorPages();
+
+            app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Concert}/{action=Index}/{id?}");
 
             // Seeding admin user
             using (var scope = app.Services.CreateScope())

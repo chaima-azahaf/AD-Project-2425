@@ -1,55 +1,49 @@
-﻿using ConcertTickets.Models;
-using ConcertTickets.Repositories;
-using ConcertTickets.ViewModels;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using ConcertTickets.Models;
+using Microsoft.EntityFrameworkCore;
 
-namespace ConcertTickets.Services
+namespace ConcertTickets.Repositories
 {
-    public class OrderService : IOrderService
+    public class OrderRepository : IOrderRepository
     {
-        private readonly IOrderRepository _orderRepository;
+        private readonly ApplicationDbContext _context;
 
-        public OrderService(IOrderRepository orderRepository)
+        public OrderRepository(ApplicationDbContext context)
         {
-            _orderRepository = orderRepository;
+            _context = context;
         }
 
-        public async Task<int> CreateOrderAsync(OrderFormViewModel model)
+        public async Task<int> CreateOrderAsync(Order order)
         {
-            var order = new Order
-            {
-                UserId = model.UserId,
-                ConcertId = model.ConcertId,
-                Paid = false
-            };
-
-            await _orderRepository.AddAsync(order);
+            _context.Orders.Add(order);
+            await _context.SaveChangesAsync();
             return order.Id;
         }
 
-        public async Task<IEnumerable<OrderViewModel>> GetOrdersByStatusAsync(bool paid)
+        public async Task<Order> GetOrderByIdAsync(int id)
         {
-            var orders = await _orderRepository.GetOrdersByStatusAsync(paid);
-            return orders.Select(o => new OrderViewModel
-            {
-                Id = o.Id,
-                UserId = o.UserId,
-                Paid = o.Paid
-            });
+            return await _context.Orders
+                .Include(o => o.TicketOffer)
+                .ThenInclude(t => t.Concert)
+                .FirstOrDefaultAsync(o => o.Id == id);
         }
 
-        public async Task<OrderViewModel> GetOrderByIdAsync(int orderId)
+        public async Task<IEnumerable<Order>> GetOrdersByStatusAsync(bool paid)
         {
-            var order = await _orderRepository.GetOrderByIdAsync(orderId);
-            return order == null ? null : new OrderViewModel { Id = order.Id, Paid = order.Paid };
+            return await _context.Orders
+                .Where(o => o.Paid == paid)
+                .ToListAsync();
         }
 
-        public async Task UpdatePaidStatusAsync(int orderId, bool paid)
+        public async Task UpdateOrderPaidStatusAsync(int orderId, bool paid)
         {
-            var order = await _orderRepository.GetOrderByIdAsync(orderId);
+            var order = await _context.Orders.FindAsync(orderId);
             if (order != null)
             {
                 order.Paid = paid;
-                await _orderRepository.UpdateAsync(order);
+                await _context.SaveChangesAsync();
             }
         }
     }

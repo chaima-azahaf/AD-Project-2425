@@ -7,5 +7,6 @@ namespace ConcertTickets.Services
     {
         Task<IEnumerable<ConcertViewModel>> GetAllConcertsAsync();
         Task<ConcertViewModel> GetConcertByIdAsync(int id);
+        Task<ConcertViewModel> GetConcertWithTicketOffersByIdAsync(int id);
     }
 }

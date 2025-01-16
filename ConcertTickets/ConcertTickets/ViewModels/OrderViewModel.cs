@@ -8,5 +8,9 @@
         public int NumberOfTickets { get; set; }
         public decimal TotalPrice { get; set; }
         public bool Paid { get; set; }
+        public int OrderId { get; internal set; }
+        public string ConcertName { get; internal set; }
+        public object ConcertDate { get; internal set; }
+        public bool HasMemberCard { get; internal set; }
     }
 }

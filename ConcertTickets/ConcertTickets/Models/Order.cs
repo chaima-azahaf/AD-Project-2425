@@ -13,6 +13,7 @@
         // Foreign Key en navigatie property naar TicketOffer
         public int TicketOfferId { get; set; }
         public TicketOffer TicketOffer { get; set; }
+        public int NumberOfTickets { get; internal set; }
     }
 
 }

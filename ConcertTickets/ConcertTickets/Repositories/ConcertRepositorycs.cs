@@ -3,10 +3,33 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ConcertTickets.Repositories
 {
-    public class ConcertRepository : Repository<Concert>, IConcertRepository
+    public class ConcertRepository : IConcertRepository
     {
-        public ConcertRepository(ApplicationDbContext context) : base(context)
+        private readonly ApplicationDbContext _context;
+
+        public ConcertRepository(ApplicationDbContext context)
         {
+            _context = context;
+        }
+
+        public Task AddAsync(Concert entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task DeleteAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<Concert>> GetAllAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Concert> GetByIdAsync(int id)
+        {
+            throw new NotImplementedException();
         }
 
         public async Task<IEnumerable<Concert>> GetConcertsWithTicketOffersAsync()
@@ -14,9 +37,9 @@ namespace ConcertTickets.Repositories
             return await _context.Concerts.Include(c => c.TicketOffers).ToListAsync();
         }
 
-        public async Task<Concert> GetConcertWithTicketOffersAsync(int id)
+        public Task UpdateAsync(Concert entity)
         {
-            return await _context.Concerts.Include(c => c.TicketOffers).FirstOrDefaultAsync(c => c.Id == id);
+            throw new NotImplementedException();
         }
     }
 }

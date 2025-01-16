@@ -4,8 +4,10 @@ namespace ConcertTickets.Services
 {
     public interface IOrderService
     {
-        Task<int> CreateOrderAsync(OrderFormViewModel model);
-        OrderViewModel GetOrderById(int orderId);  // Voor Success-pagina
+        Task<int> CreateOrderAsync(OrderFormViewModel model); // Crée une commande
+        Task GetOrderById(int orderId);
+        Task<OrderViewModel> GetOrderByIdAsync(int id); // Récupère une commande pour affichage
+        Task<IEnumerable<OrderViewModel>> GetOrdersByStatusAsync(bool paid); // Récupère les commandes en fonction du statut de paiement
+        Task UpdateOrderPaidStatusAsync(int orderId, bool paid); // Met à jour le statut de paiement
     }
-
 }

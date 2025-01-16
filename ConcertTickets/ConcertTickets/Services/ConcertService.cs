@@ -1,48 +1,53 @@
-﻿using ConcertTickets.Models;
-using ConcertTickets.Repositories;
+﻿using ConcertTickets.Repositories;
 using ConcertTickets.ViewModels;
+using ConcertTickets.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace ConcertTickets.Services
 {
     public class ConcertService : IConcertService
     {
         private readonly IConcertRepository _concertRepository;
-
+        private readonly ApplicationDbContext _context;
         public ConcertService(IConcertRepository concertRepository)
         {
             _concertRepository = concertRepository;
         }
 
-        public async Task<IEnumerable<ConcertViewModel>> GetAllConcertsAsync()
+        public Task<IEnumerable<ConcertViewModel>> GetAllConcertsAsync()
         {
-            var concerts = await _concertRepository.GetConcertsWithTicketOffersAsync();
-            return concerts.Select(c => new ConcertViewModel
-            {
-                Id = c.Id,
-                Artist = c.Artist,
-                Date = c.Date,
-                TicketOffers = c.TicketOffers.Select(t => new TicketOfferViewModel
-                {
-                    Price = t.Price,
-                    Available = t.Available
-                }).ToList()
-            });
+            throw new NotImplementedException();
         }
 
-        public async Task<ConcertViewModel> GetConcertByIdAsync(int id)
+        public Task<ConcertViewModel> GetConcertByIdAsync(int id)
         {
-            var concert = await _concertRepository.GetConcertWithTicketOffersAsync(id);
-            if (concert == null) return null;
+            throw new NotImplementedException();
+        }
+
+        public async Task<ConcertViewModel> GetConcertWithTicketOffersByIdAsync(int id)
+        {
+            var concert = await _context.Concerts
+                .Include(c => c.TicketOffers)
+                .FirstOrDefaultAsync(c => c.Id == id);
+
+            if (concert == null)
+            {
+                return null;
+            }
 
             return new ConcertViewModel
             {
                 Id = concert.Id,
                 Artist = concert.Artist,
+                Location = concert.Location,
                 Date = concert.Date,
-                TicketOffers = concert.TicketOffers.Select(t => new TicketOfferViewModel
+                ArtistPicture = $"/images/{concert.Artist.Replace(" ", string.Empty)}.jpg",
+                TicketOffers = concert.TicketOffers.Select(to => new TicketOfferViewModel
                 {
-                    Price = t.Price,
-                    Available = t.Available
+                    Id = to.Id,
+                    TicketType = to.TicketType,
+                    Price = (decimal)to.Price,
+                    AvailableTickets = to.NumTickets
                 }).ToList()
             };
         }

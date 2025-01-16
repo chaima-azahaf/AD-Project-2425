@@ -1,4 +1,8 @@
-﻿namespace ConcertTickets.ViewModels
+﻿using ConcertTickets.Models;
+using System;
+using System.Collections.Generic;
+
+namespace ConcertTickets.ViewModels
 {
     public class ConcertViewModel
     {
@@ -6,14 +10,30 @@
         public string Artist { get; set; }
         public string Location { get; set; }
         public DateTime Date { get; set; }
-        public List<TicketOfferViewModel> TicketOffers { get; set; } = new List<TicketOfferViewModel>();
-        public int AvailableTickets => TicketOffers.Sum(t => t.NumTickets);
+        public string ArtistPicture { get; set; }
+        public List<TicketOfferViewModel> TicketOffers { get; set; }
+        public string ArtistPictureUrl => $"/images/artists/{ArtistPicture.Replace(" ", "").ToLower()}.jpg";
+
+        public int TotalTicketsAvailable
+        {
+            get
+            {
+                return TicketOffers?.Sum(to => to.NumTickets) ?? 0;
+            }
+        }
     }
 
     public class TicketOfferViewModel
     {
+        public int Id { get; set; }
         public string TicketType { get; set; }
-        public int NumTickets { get; set; }
         public decimal Price { get; set; }
+        public int AvailableTickets { get; set; }
+        public int TicketOfferId { get; internal set; }
+        public int NumTickets { get; internal set; }
+        public DateTime ConcertDate { get; internal set; }
+        public string ConcertName { get; internal set; }
+        public Concert Concert { get; internal set; }
+        public double FinalPrice { get; internal set; }
     }
 }

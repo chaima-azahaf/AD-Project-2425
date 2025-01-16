@@ -1,6 +1,5 @@
-﻿using ConcertTickets.Services;
-using ConcertTickets.ViewModels;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using ConcertTickets.Services;
 
 namespace ConcertTickets.Controllers
 {
@@ -8,30 +7,26 @@ namespace ConcertTickets.Controllers
     {
         private readonly IConcertService _concertService;
 
-        // Constructor injecteert de service
         public ConcertController(IConcertService concertService)
         {
             _concertService = concertService;
         }
 
-        // Actie voor Concert > Index
-        [HttpGet]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var concerten = _concertService.GetAllConcerts();  // Haal alle concerten op via de service
-            return View(concerten);
+            var concerts = await _concertService.GetAllConcertsAsync();
+            return View(concerts);
         }
 
-        [HttpGet]
-        public IActionResult Buy(int id)
+        public async Task<IActionResult> Buy(int id)
         {
-            var concert = _concertService.GetConcertById(id);  // Haal het concert op met het specifieke ID
+            var concert = await _concertService.GetConcertWithTicketOffersByIdAsync(id);
             if (concert == null)
             {
-                return NotFound();  // Als het concert niet bestaat, toon een 404-pagina
+                return NotFound();
             }
-            return View(concert);  // Geef het concert door aan de view
-        }
 
+            return View(concert);
+        }
     }
 }

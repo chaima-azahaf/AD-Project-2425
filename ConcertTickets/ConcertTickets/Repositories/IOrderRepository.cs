@@ -1,12 +1,12 @@
-﻿using ConcertTickets.ViewModels;
+﻿using ConcertTickets.Models;
 
-namespace ConcertTickets.Services
+namespace ConcertTickets.Repositories
 {
-    public interface IOrderService
+    public interface IOrderRepository
     {
-        Task<int> CreateOrderAsync(OrderFormViewModel model);
-        Task<IEnumerable<OrderViewModel>> GetOrdersByStatusAsync(bool paid);
-        Task<OrderViewModel> GetOrderByIdAsync(int orderId);
-        Task UpdatePaidStatusAsync(int orderId, bool paid);
+        Task<int> CreateOrderAsync(Order order); 
+        Task<Order> GetOrderByIdAsync(int id); 
+        Task<IEnumerable<Order>> GetOrdersByStatusAsync(bool paid);
+        Task UpdateOrderPaidStatusAsync(int orderId, bool paid);
     }
 }
