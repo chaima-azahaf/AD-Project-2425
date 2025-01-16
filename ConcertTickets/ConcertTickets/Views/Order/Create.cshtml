@@ -1,0 +1,29 @@
+﻿@model ConcertTickets.ViewModels.OrderFormViewModel
+
+<div class="container mt-4">
+    <h2>Bestel tickets voor @Model.TicketType op @Model.Price.ToString("C")</h2>
+    <p>Aantal beschikbare tickets: @Model.AvailableTickets</p>
+
+    <form asp-action="Create" method="post" class="mt-4">
+        @Html.AntiForgeryToken()
+
+        <div class="form-group mb-3">
+            <label for="NumberOfTickets">Aantal tickets:</label>
+            <input asp-for="NumberOfTickets" class="form-control" />
+            <span asp-validation-for="NumberOfTickets" class="text-danger"></span>
+        </div>
+
+        <div class="form-check mb-3">
+            <input asp-for="TermsAccepted" class="form-check-input" type="checkbox" id="TermsAccepted">
+            <label asp-for="TermsAccepted" class="form-check-label">Ik accepteer de algemene voorwaarden</label>
+            <span asp-validation-for="TermsAccepted" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Bestellen</button>
+        <a asp-action="Buy" asp-controller="Concert" asp-route-id="@Model.ConcertId" class="btn btn-secondary">Annuleren</a>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -18,13 +18,19 @@ namespace ConcertTickets.Services
             var order = new Order
             {
                 UserId = model.UserId,
+                UserName = model.UserName,
                 ConcertId = model.ConcertId,
+                TicketType = model.TicketType,
+                NumberOfTickets = model.NumberOfTickets,
+                TotalPrice = model.NumberOfTickets * model.Price,
                 Paid = false
             };
 
             await _orderRepository.AddAsync(order);
+            await _orderRepository.SaveChangesAsync();
             return order.Id;
         }
+
 
         public async Task<IEnumerable<OrderViewModel>> GetOrdersByStatusAsync(bool paid)
         {

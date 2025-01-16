@@ -28,13 +28,13 @@ namespace ConcertTickets.Services
 
         public async Task UpdateTicketOfferAsync(TicketOfferUpdateViewModel model)
         {
-            var ticketOffer = await _ticketOfferRepository.GetTicketOfferByIdAsync(model.Id);
-            if (ticketOffer != null)
+            var ticketOffer = await _ticketOfferRepository.GetByIdAsync(model.TicketOfferId);
+            if (ticketOffer != null && ticketOffer.NumTickets >= model.TicketsToSubtract)
             {
-                ticketOffer.Price = model.Price;
-                ticketOffer.Available = model.Available;
-                await _ticketOfferRepository.UpdateAsync(ticketOffer);
+                ticketOffer.NumTickets -= model.TicketsToSubtract;
+                await _ticketOfferRepository.SaveChangesAsync();
             }
         }
+
     }
 }

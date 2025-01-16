@@ -1,0 +1,12 @@
+﻿@model ConcertTickets.ViewModels.OrderViewModel
+
+<div class="container mt-4">
+    <h2>Bestelling succesvol</h2>
+    <p><strong>Naam:</strong> @Model.UserName</p>
+    <p><strong>Ticket type:</strong> @Model.TicketType</p>
+    <p><strong>Aantal tickets:</strong> @Model.NumberOfTickets</p>
+    <p><strong>Totaal prijs:</strong> @Model.TotalPrice.ToString("C")</p>
+    <p><strong>Betaald:</strong> @(Model.Paid ? "Ja" : "Nee")</p>
+
+    <a asp-controller="Concert" asp-action="Index" class="btn btn-primary mt-4">Terug naar overzicht</a>
+</div>

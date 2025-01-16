@@ -7,3 +7,4 @@ C:\Users\chaia\source\repos\AD-Project-2425\ConcertTickets\ConcertTickets\obj\De
 C:\Users\chaia\source\repos\AD-Project-2425\ConcertTickets\ConcertTickets\obj\Debug\net8.0\ConcertTickets.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\chaia\source\repos\AD-Project-2425\ConcertTickets\ConcertTickets\obj\Debug\net8.0\ConcertTickets.RazorAssemblyInfo.cache
 C:\Users\chaia\source\repos\AD-Project-2425\ConcertTickets\ConcertTickets\obj\Debug\net8.0\ConcertTickets.RazorAssemblyInfo.cs
+C:\Users\chaia\source\repos\AD-Project-2425\ConcertTickets\ConcertTickets\obj\Debug\net8.0\ConcertTickets.sourcelink.json
