@@ -18,7 +18,7 @@
                             <strong>@offer.TicketType</strong> - &euro; @offer.Price
                         </span>
                         <span class="badge bg-primary">@offer.AvailableTickets tickets beschikbaar</span>
-                        <a class="btn btn-primary" href="@Url.Action("Create", "Order", new { ticketOfferId = offer.Id })">
+                        <a class="btn btn-primary" href="@Url.Action("Create", "Order", new { Id = offer.Id })">
                             Koop tickets
                         </a>
                     </li>

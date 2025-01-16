@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection.Emit;
 
 namespace ConcertTickets.Models
 {
@@ -17,6 +18,11 @@ namespace ConcertTickets.Models
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+
+            builder.Entity<TicketOffer>()
+            .HasOne(t => t.Concert)
+            .WithMany(c => c.TicketOffers)
+            .HasForeignKey(t => t.ConcertId);
 
             // Seeding Concert data
             builder.Entity<Concert>().HasData(

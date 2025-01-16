@@ -27,6 +27,7 @@ namespace ConcertTickets.Services
                 TicketOfferId = ticketOffer.Id,
                 TicketType = ticketOffer.TicketType,
                 Price = (decimal)ticketOffer.Price,
+                AvailableTickets = ticketOffer.NumTickets,
                 NumTickets = ticketOffer.NumTickets,
                 ConcertName = ticketOffer.Concert.Artist,
                 ConcertDate = ticketOffer.Concert.Date

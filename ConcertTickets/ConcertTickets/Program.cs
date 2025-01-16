@@ -12,25 +12,25 @@ namespace ConcertTickets
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
-            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-            
+            // Add services to the container
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
+                ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(connectionString));
 
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-            // Dependency injection voor repositories
+            // Dependency injection pour repositories et services
             builder.Services.AddScoped<IConcertRepository, ConcertRepository>();
             builder.Services.AddScoped<IOrderRepository, OrderRepository>();
             builder.Services.AddScoped<ITicketOfferRepository, TicketOfferRepository>();
 
-            // Dependency injection voor services
             builder.Services.AddScoped<IConcertService, ConcertService>();
             builder.Services.AddScoped<IOrderService, OrderService>();
             builder.Services.AddScoped<ITicketOfferService, TicketOfferService>();
 
-            // Voeg roles en CustomUser toe
+            // Configuration pour Identity
             builder.Services.AddDefaultIdentity<CustomUser>(options =>
             {
                 options.SignIn.RequireConfirmedAccount = false;
@@ -40,7 +40,6 @@ namespace ConcertTickets
 
             builder.Services.AddControllersWithViews();
             builder.Services.AddRazorPages();
-
 
             var app = builder.Build();
 
@@ -61,12 +60,9 @@ namespace ConcertTickets
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
-            app.MapRazorPages();
+                pattern: "{controller=Concert}/{action=Index}/{id?}");
 
-            app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Concert}/{action=Index}/{id?}");
+            app.MapRazorPages();
 
             // Seeding admin user
             using (var scope = app.Services.CreateScope())
@@ -74,7 +70,7 @@ namespace ConcertTickets
                 var services = scope.ServiceProvider;
                 try
                 {
-                    var userManager = services.GetRequiredService<UserManager<CustomUser>>();  // Gebruik CustomUser
+                    var userManager = services.GetRequiredService<UserManager<CustomUser>>();
                     var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
 
                     await SeedAdminUserAsync(userManager, roleManager);

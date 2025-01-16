@@ -31,16 +31,12 @@ namespace ConcertTickets.Repositories
                 .ToListAsync();
         }
 
-        public async Task UpdateTicketAvailabilityAsync(int ticketOfferId, int numberOfTicketsSold)
+        public async Task UpdateTicketAvailabilityAsync(int id, int quantity)
         {
-            var ticketOffer = await _context.TicketOffers.FindAsync(ticketOfferId);
+            var ticketOffer = await _context.TicketOffers.FirstOrDefaultAsync(t => t.Id == id);
             if (ticketOffer != null)
             {
-                ticketOffer.NumTickets -= numberOfTicketsSold;
-                if (ticketOffer.NumTickets < 0)
-                {
-                    ticketOffer.NumTickets = 0; 
-                }
+                ticketOffer.NumTickets -= quantity;
                 await _context.SaveChangesAsync();
             }
         }

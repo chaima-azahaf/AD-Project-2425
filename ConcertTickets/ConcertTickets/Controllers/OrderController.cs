@@ -26,29 +26,29 @@ namespace ConcertTickets.Controllers
 
         // GET: Order/Create
         [HttpGet]
-        public async Task<IActionResult> Create(int id)
+        public async Task<IActionResult> Create(int Id)
         {
             var user = await _userManager.GetUserAsync(User);
             if (user == null) return RedirectToAction("Login", "Account");
 
-            var hasMemberCard = user.HasMemberCard;
-            var ticketOfferViewModel = await _ticketOfferService.GetTicketOfferByIdAsync(id);
-
-            if (ticketOfferViewModel == null) return NotFound();
+            var ticketOffer = await _ticketOfferService.GetTicketOfferByIdAsync(Id);
+            if (ticketOffer == null) return NotFound();
 
             var orderFormViewModel = new OrderFormViewModel
             {
-                TicketOfferId = ticketOfferViewModel.TicketOfferId,
-                FinalPrice = ticketOfferViewModel.FinalPrice,
-                AvailableTickets = ticketOfferViewModel.AvailableTickets,
-                ConcertName = ticketOfferViewModel.ConcertName,
-                ConcertDate = ticketOfferViewModel.ConcertDate,
+                TicketOfferId = ticketOffer.Id,
+                TicketType = ticketOffer.TicketType,
+                FinalPrice = (double)ticketOffer.Price,
+                AvailableTickets = ticketOffer.AvailableTickets,
+                ConcertName = ticketOffer.ConcertName,
+                ConcertDate = ticketOffer.ConcertDate,
                 UserId = user.Id,
                 UserName = user.UserName
             };
 
             return View(orderFormViewModel);
         }
+
 
         // POST: Order/Create
         [HttpPost]
