@@ -22,10 +22,13 @@ namespace ConcertTickets.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Concert>> GetAllAsync()
+        public async Task<IEnumerable<Concert>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return await _context.Concerts
+                .Include(c => c.TicketOffers)
+                .ToListAsync();
         }
+
 
         public Task<Concert> GetByIdAsync(int id)
         {

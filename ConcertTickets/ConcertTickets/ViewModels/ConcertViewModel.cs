@@ -14,13 +14,7 @@ namespace ConcertTickets.ViewModels
         public List<TicketOfferViewModel> TicketOffers { get; set; }
         public string ArtistPictureUrl => $"/images/artists/{ArtistPicture.Replace(" ", "").ToLower()}.jpg";
 
-        public int TotalTicketsAvailable
-        {
-            get
-            {
-                return TicketOffers?.Sum(to => to.NumTickets) ?? 0;
-            }
-        }
+        public int TotalTicketsAvailable { get; set; }
     }
 
     public class TicketOfferViewModel

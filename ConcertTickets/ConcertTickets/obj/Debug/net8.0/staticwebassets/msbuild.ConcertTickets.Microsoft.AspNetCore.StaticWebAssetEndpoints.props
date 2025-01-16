@@ -4,13 +4,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ConcertTickets.yb2zp7kh7y.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-clS957mhntO5BcjvgcoQhLdKCue1xpvh\u002BdboTeMdo1Y="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1132"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022clS957mhntO5BcjvgcoQhLdKCue1xpvh\u002BdboTeMdo1Y=\u0022"},{"Name":"Last-Modified","Value":"Thu, 16 Jan 2025 17:19:20 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1132"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022clS957mhntO5BcjvgcoQhLdKCue1xpvh\u002BdboTeMdo1Y=\u0022"},{"Name":"Last-Modified","Value":"Thu, 16 Jan 2025 20:33:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ConcertTickets/ConcertTickets.yb2zp7kh7y.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ConcertTickets.yb2zp7kh7y.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"yb2zp7kh7y"},{"Name":"integrity","Value":"sha256-clS957mhntO5BcjvgcoQhLdKCue1xpvh\u002BdboTeMdo1Y="},{"Name":"label","Value":"_content/ConcertTickets/ConcertTickets.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1132"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022clS957mhntO5BcjvgcoQhLdKCue1xpvh\u002BdboTeMdo1Y=\u0022"},{"Name":"Last-Modified","Value":"Thu, 16 Jan 2025 17:19:20 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1132"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022clS957mhntO5BcjvgcoQhLdKCue1xpvh\u002BdboTeMdo1Y=\u0022"},{"Name":"Last-Modified","Value":"Thu, 16 Jan 2025 20:33:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ConcertTickets/css/site.c2tiyv64ts.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
