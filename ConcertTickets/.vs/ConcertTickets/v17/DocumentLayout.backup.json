@@ -3,12 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|c:\\users\\chaia\\source\\repos\\ad-project-2425\\concerttickets\\concerttickets\\viewmodels\\concertviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|solutionrelative:concerttickets\\viewmodels\\concertviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|c:\\users\\chaia\\source\\repos\\ad-project-2425\\concerttickets\\concerttickets\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|solutionrelative:concerttickets\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|c:\\users\\chaia\\source\\repos\\ad-project-2425\\concerttickets\\concerttickets\\views\\concert\\buy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|solutionrelative:concerttickets\\views\\concert\\buy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|c:\\users\\chaia\\source\\repos\\ad-project-2425\\concerttickets\\concerttickets\\views\\concert\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|solutionrelative:concerttickets\\views\\concert\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|c:\\users\\chaia\\source\\repos\\ad-project-2425\\concerttickets\\concerttickets\\views\\concert\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|solutionrelative:concerttickets\\views\\concert\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|c:\\users\\chaia\\source\\repos\\ad-project-2425\\concerttickets\\concerttickets\\services\\concertservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|solutionrelative:concerttickets\\services\\concertservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|c:\\users\\chaia\\source\\repos\\ad-project-2425\\concerttickets\\concerttickets\\services\\iconcertservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|solutionrelative:concerttickets\\services\\iconcertservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|c:\\users\\chaia\\source\\repos\\ad-project-2425\\concerttickets\\concerttickets\\repositories\\concertrepositorycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|solutionrelative:concerttickets\\repositories\\concertrepositorycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|c:\\users\\chaia\\source\\repos\\ad-project-2425\\concerttickets\\concerttickets\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|solutionrelative:concerttickets\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|c:\\users\\chaia\\source\\repos\\ad-project-2425\\concerttickets\\concerttickets\\viewmodels\\concertviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|solutionrelative:concerttickets\\viewmodels\\concertviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|c:\\users\\chaia\\source\\repos\\ad-project-2425\\concerttickets\\concerttickets\\services\\ticketofferservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,24 +47,12 @@
       "RelativeMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|solutionrelative:concerttickets\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|c:\\users\\chaia\\source\\repos\\ad-project-2425\\concerttickets\\concerttickets\\services\\concertservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|solutionrelative:concerttickets\\services\\concertservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|c:\\users\\chaia\\source\\repos\\ad-project-2425\\concerttickets\\concerttickets\\repositories\\ticketofferrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|solutionrelative:concerttickets\\repositories\\ticketofferrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|c:\\users\\chaia\\source\\repos\\ad-project-2425\\concerttickets\\concerttickets\\repositories\\iconcertrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|solutionrelative:concerttickets\\repositories\\iconcertrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|c:\\users\\chaia\\source\\repos\\ad-project-2425\\concerttickets\\concerttickets\\repositories\\concertrepositorycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|solutionrelative:concerttickets\\repositories\\concertrepositorycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|c:\\users\\chaia\\source\\repos\\ad-project-2425\\concerttickets\\concerttickets\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|solutionrelative:concerttickets\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|c:\\users\\chaia\\source\\repos\\ad-project-2425\\concerttickets\\concerttickets\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,20 +91,8 @@
       "RelativeMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|solutionrelative:concerttickets\\concerttickets.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|c:\\users\\chaia\\source\\repos\\ad-project-2425\\concerttickets\\concerttickets\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|solutionrelative:concerttickets\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|c:\\users\\chaia\\source\\repos\\ad-project-2425\\concerttickets\\concerttickets\\viewmodels\\orderformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|solutionrelative:concerttickets\\viewmodels\\orderformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|c:\\users\\chaia\\source\\repos\\ad-project-2425\\concerttickets\\concerttickets\\views\\concert\\buy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|solutionrelative:concerttickets\\views\\concert\\buy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|c:\\users\\chaia\\source\\repos\\ad-project-2425\\concerttickets\\concerttickets\\services\\iconcertservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|solutionrelative:concerttickets\\services\\iconcertservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|c:\\users\\chaia\\source\\repos\\ad-project-2425\\concerttickets\\concerttickets\\controllers\\concertcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -97,10 +101,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|c:\\users\\chaia\\source\\repos\\ad-project-2425\\concerttickets\\concerttickets\\viewmodels\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|solutionrelative:concerttickets\\viewmodels\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|c:\\users\\chaia\\source\\repos\\ad-project-2425\\concerttickets\\concerttickets\\views\\concert\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{012B8436-96CB-4CF5-ACE7-5BA120E5C99E}|ConcertTickets\\ConcertTickets.csproj|solutionrelative:concerttickets\\views\\concert\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -110,11 +110,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "IConcertRepository.cs",
               "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Repositories\\IConcertRepository.cs",
               "RelativeDocumentMoniker": "ConcertTickets\\Repositories\\IConcertRepository.cs",
@@ -127,59 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TicketOfferService.cs",
-              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Services\\TicketOfferService.cs",
-              "RelativeDocumentMoniker": "ConcertTickets\\Services\\TicketOfferService.cs",
-              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Services\\TicketOfferService.cs",
-              "RelativeToolTip": "ConcertTickets\\Services\\TicketOfferService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T21:06:23.017Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Program.cs",
-              "RelativeDocumentMoniker": "ConcertTickets\\Program.cs",
-              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Program.cs",
-              "RelativeToolTip": "ConcertTickets\\Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBkAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T15:38:20.923Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TicketOfferRepository.cs",
-              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Repositories\\TicketOfferRepository.cs",
-              "RelativeDocumentMoniker": "ConcertTickets\\Repositories\\TicketOfferRepository.cs",
-              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Repositories\\TicketOfferRepository.cs",
-              "RelativeToolTip": "ConcertTickets\\Repositories\\TicketOfferRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T15:29:00.952Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ConcertService.cs",
-              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Services\\ConcertService.cs",
-              "RelativeDocumentMoniker": "ConcertTickets\\Services\\ConcertService.cs",
-              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Services\\ConcertService.cs",
-              "RelativeToolTip": "ConcertTickets\\Services\\ConcertService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T16:11:01.627Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "OrderService.cs",
               "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Services\\OrderService.cs",
               "RelativeDocumentMoniker": "ConcertTickets\\Services\\OrderService.cs",
@@ -187,12 +135,11 @@
               "RelativeToolTip": "ConcertTickets\\Services\\OrderService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T21:05:49.696Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-15T21:05:49.696Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Views\\Concert\\Index.cshtml",
               "RelativeDocumentMoniker": "ConcertTickets\\Views\\Concert\\Index.cshtml",
@@ -205,176 +152,71 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ConcertViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\ViewModels\\ConcertViewModel.cs",
-              "RelativeDocumentMoniker": "ConcertTickets\\ViewModels\\ConcertViewModel.cs",
-              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\ViewModels\\ConcertViewModel.cs",
-              "RelativeToolTip": "ConcertTickets\\ViewModels\\ConcertViewModel.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAADwvwsAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T21:00:41.016Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "ConcertRepositorycs.cs",
               "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Repositories\\ConcertRepositorycs.cs",
               "RelativeDocumentMoniker": "ConcertTickets\\Repositories\\ConcertRepositorycs.cs",
               "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Repositories\\ConcertRepositorycs.cs",
               "RelativeToolTip": "ConcertTickets\\Repositories\\ConcertRepositorycs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-16T16:12:03.152Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "ConcertTickets\\Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "ConcertTickets\\Controllers\\OrderController.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAYwEIAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "ConcertService.cs",
+              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Services\\ConcertService.cs",
+              "RelativeDocumentMoniker": "ConcertTickets\\Services\\ConcertService.cs",
+              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Services\\ConcertService.cs",
+              "RelativeToolTip": "ConcertTickets\\Services\\ConcertService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T20:57:52.772Z",
+              "WhenOpened": "2025-01-16T16:11:01.627Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ITicketOfferRepository.cs",
-              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Repositories\\ITicketOfferRepository.cs",
-              "RelativeDocumentMoniker": "ConcertTickets\\Repositories\\ITicketOfferRepository.cs",
-              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Repositories\\ITicketOfferRepository.cs",
-              "RelativeToolTip": "ConcertTickets\\Repositories\\ITicketOfferRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T16:37:29.388Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ITicketOfferService.cs",
-              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Services\\ITicketOfferService.cs",
-              "RelativeDocumentMoniker": "ConcertTickets\\Services\\ITicketOfferService.cs",
-              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Services\\ITicketOfferService.cs",
-              "RelativeToolTip": "ConcertTickets\\Services\\ITicketOfferService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T16:47:46.6Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IOrderService.cs",
-              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Services\\IOrderService.cs",
-              "RelativeDocumentMoniker": "ConcertTickets\\Services\\IOrderService.cs",
-              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Services\\IOrderService.cs",
-              "RelativeToolTip": "ConcertTickets\\Services\\IOrderService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T21:05:19.986Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "OrderRepository.cs",
-              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Repositories\\OrderRepository.cs",
-              "RelativeDocumentMoniker": "ConcertTickets\\Repositories\\OrderRepository.cs",
-              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Repositories\\OrderRepository.cs",
-              "RelativeToolTip": "ConcertTickets\\Repositories\\OrderRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T16:42:48.606Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IOrderRepository.cs",
-              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Repositories\\IOrderRepository.cs",
-              "RelativeDocumentMoniker": "ConcertTickets\\Repositories\\IOrderRepository.cs",
-              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Repositories\\IOrderRepository.cs",
-              "RelativeToolTip": "ConcertTickets\\Repositories\\IOrderRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T16:41:04.249Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "TermsRequiredAttribute.cs",
-              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Validators\\TermsRequiredAttribute.cs",
-              "RelativeDocumentMoniker": "ConcertTickets\\Validators\\TermsRequiredAttribute.cs",
-              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Validators\\TermsRequiredAttribute.cs",
-              "RelativeToolTip": "ConcertTickets\\Validators\\TermsRequiredAttribute.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T16:32:58.837Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ConcertTickets",
-              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\ConcertTickets.csproj",
-              "RelativeDocumentMoniker": "ConcertTickets\\ConcertTickets.csproj",
-              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\ConcertTickets.csproj",
-              "RelativeToolTip": "ConcertTickets\\ConcertTickets.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-16T16:32:28.537Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "TicketOfferUpdateViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\ViewModels\\TicketOfferUpdateViewModel.cs",
-              "RelativeDocumentMoniker": "ConcertTickets\\ViewModels\\TicketOfferUpdateViewModel.cs",
-              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\ViewModels\\TicketOfferUpdateViewModel.cs",
-              "RelativeToolTip": "ConcertTickets\\ViewModels\\TicketOfferUpdateViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T21:04:50.884Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "OrderFormViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\ViewModels\\OrderFormViewModel.cs",
-              "RelativeDocumentMoniker": "ConcertTickets\\ViewModels\\OrderFormViewModel.cs",
-              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\ViewModels\\OrderFormViewModel.cs",
-              "RelativeToolTip": "ConcertTickets\\ViewModels\\OrderFormViewModel.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA5wBwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T20:58:57.472Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 0,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Views\\Order\\Create.cshtml",
               "RelativeDocumentMoniker": "ConcertTickets\\Views\\Order\\Create.cshtml",
               "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Views\\Order\\Create.cshtml",
               "RelativeToolTip": "ConcertTickets\\Views\\Order\\Create.cshtml",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAuwCMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-15T20:59:40.294Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 8,
+              "Title": "ConcertViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\ViewModels\\ConcertViewModel.cs",
+              "RelativeDocumentMoniker": "ConcertTickets\\ViewModels\\ConcertViewModel.cs",
+              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\ViewModels\\ConcertViewModel.cs",
+              "RelativeToolTip": "ConcertTickets\\ViewModels\\ConcertViewModel.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAwwB8AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T21:00:41.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TicketOfferService.cs",
+              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Services\\TicketOfferService.cs",
+              "RelativeDocumentMoniker": "ConcertTickets\\Services\\TicketOfferService.cs",
+              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Services\\TicketOfferService.cs",
+              "RelativeToolTip": "ConcertTickets\\Services\\TicketOfferService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T21:06:23.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Buy.cshtml",
               "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Views\\Concert\\Buy.cshtml",
               "RelativeDocumentMoniker": "ConcertTickets\\Views\\Concert\\Buy.cshtml",
@@ -387,7 +229,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 2,
+              "Title": "Success.cshtml",
+              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Views\\Concert\\Success.cshtml",
+              "RelativeDocumentMoniker": "ConcertTickets\\Views\\Concert\\Success.cshtml",
+              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Views\\Concert\\Success.cshtml",
+              "RelativeToolTip": "ConcertTickets\\Views\\Concert\\Success.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T21:09:56.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Program.cs",
+              "RelativeDocumentMoniker": "ConcertTickets\\Program.cs",
+              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Program.cs",
+              "RelativeToolTip": "ConcertTickets\\Program.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAD4vyUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T15:38:20.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "IConcertService.cs",
               "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Services\\IConcertService.cs",
               "RelativeDocumentMoniker": "ConcertTickets\\Services\\IConcertService.cs",
@@ -400,7 +268,139 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TicketOfferRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Repositories\\TicketOfferRepository.cs",
+              "RelativeDocumentMoniker": "ConcertTickets\\Repositories\\TicketOfferRepository.cs",
+              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Repositories\\TicketOfferRepository.cs",
+              "RelativeToolTip": "ConcertTickets\\Repositories\\TicketOfferRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T15:29:00.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "ConcertTickets\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "ConcertTickets\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAYwEIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T20:57:52.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ITicketOfferRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Repositories\\ITicketOfferRepository.cs",
+              "RelativeDocumentMoniker": "ConcertTickets\\Repositories\\ITicketOfferRepository.cs",
+              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Repositories\\ITicketOfferRepository.cs",
+              "RelativeToolTip": "ConcertTickets\\Repositories\\ITicketOfferRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T16:37:29.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ITicketOfferService.cs",
+              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Services\\ITicketOfferService.cs",
+              "RelativeDocumentMoniker": "ConcertTickets\\Services\\ITicketOfferService.cs",
+              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Services\\ITicketOfferService.cs",
+              "RelativeToolTip": "ConcertTickets\\Services\\ITicketOfferService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T16:47:46.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Services\\IOrderService.cs",
+              "RelativeDocumentMoniker": "ConcertTickets\\Services\\IOrderService.cs",
+              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Services\\IOrderService.cs",
+              "RelativeToolTip": "ConcertTickets\\Services\\IOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T21:05:19.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Repositories\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "ConcertTickets\\Repositories\\OrderRepository.cs",
+              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Repositories\\OrderRepository.cs",
+              "RelativeToolTip": "ConcertTickets\\Repositories\\OrderRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T16:42:48.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IOrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Repositories\\IOrderRepository.cs",
+              "RelativeDocumentMoniker": "ConcertTickets\\Repositories\\IOrderRepository.cs",
+              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Repositories\\IOrderRepository.cs",
+              "RelativeToolTip": "ConcertTickets\\Repositories\\IOrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T16:41:04.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TermsRequiredAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Validators\\TermsRequiredAttribute.cs",
+              "RelativeDocumentMoniker": "ConcertTickets\\Validators\\TermsRequiredAttribute.cs",
+              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Validators\\TermsRequiredAttribute.cs",
+              "RelativeToolTip": "ConcertTickets\\Validators\\TermsRequiredAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T16:32:58.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ConcertTickets.csproj",
+              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\ConcertTickets.csproj",
+              "RelativeDocumentMoniker": "ConcertTickets\\ConcertTickets.csproj",
+              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\ConcertTickets.csproj",
+              "RelativeToolTip": "ConcertTickets\\ConcertTickets.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-16T16:32:28.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TicketOfferUpdateViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\ViewModels\\TicketOfferUpdateViewModel.cs",
+              "RelativeDocumentMoniker": "ConcertTickets\\ViewModels\\TicketOfferUpdateViewModel.cs",
+              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\ViewModels\\TicketOfferUpdateViewModel.cs",
+              "RelativeToolTip": "ConcertTickets\\ViewModels\\TicketOfferUpdateViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T21:04:50.884Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 22,
+              "Title": "OrderFormViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\ViewModels\\OrderFormViewModel.cs",
+              "RelativeDocumentMoniker": "ConcertTickets\\ViewModels\\OrderFormViewModel.cs",
+              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\ViewModels\\OrderFormViewModel.cs",
+              "RelativeToolTip": "ConcertTickets\\ViewModels\\OrderFormViewModel.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA5wBwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T20:58:57.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "ConcertController.cs",
               "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Controllers\\ConcertController.cs",
               "RelativeDocumentMoniker": "ConcertTickets\\Controllers\\ConcertController.cs",
@@ -408,12 +408,11 @@
               "RelativeToolTip": "ConcertTickets\\Controllers\\ConcertController.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAADwvx0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T16:09:11.328Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-16T16:09:11.328Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "OrderViewModel.cs",
               "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\ViewModels\\OrderViewModel.cs",
               "RelativeDocumentMoniker": "ConcertTickets\\ViewModels\\OrderViewModel.cs",
@@ -421,21 +420,7 @@
               "RelativeToolTip": "ConcertTickets\\ViewModels\\OrderViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T21:08:51.704Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Success.cshtml",
-              "DocumentMoniker": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Views\\Concert\\Success.cshtml",
-              "RelativeDocumentMoniker": "ConcertTickets\\Views\\Concert\\Success.cshtml",
-              "ToolTip": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\Views\\Concert\\Success.cshtml",
-              "RelativeToolTip": "ConcertTickets\\Views\\Concert\\Success.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-15T21:09:56.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-15T21:08:51.704Z"
             }
           ]
         }

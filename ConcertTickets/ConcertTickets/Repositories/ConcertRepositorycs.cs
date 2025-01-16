@@ -37,6 +37,11 @@ namespace ConcertTickets.Repositories
             return await _context.Concerts.Include(c => c.TicketOffers).ToListAsync();
         }
 
+        public Task GetConcertWithTicketOffersAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task UpdateAsync(Concert entity)
         {
             throw new NotImplementedException();
