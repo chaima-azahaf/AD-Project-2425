@@ -18,15 +18,17 @@ namespace ConcertTickets.Services
             var order = new Order
             {
                 UserId = model.UserId,
-                UserName = model.UserName,
                 TicketOfferId = model.TicketOfferId,
-                NumberOfTickets = model.NumberOfTickets,
-                TotalPrice = model.FinalPrice,
-                Paid = false
+                NumTickets = model.NumberOfTickets,
+                TotalPrice = (double)(model.NumberOfTickets * (decimal)model.FinalPrice),
+                Paid = false,
+                DiscountApplied = model.HasMemberCard
             };
 
-            return await _orderRepository.CreateOrderAsync(order);
+            await _orderRepository.AddAsync(order);
+            return order.Id;
         }
+
 
         public Task GetOrderById(int orderId)
         {

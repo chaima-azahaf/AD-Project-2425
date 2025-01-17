@@ -4,6 +4,7 @@ namespace ConcertTickets.Repositories
 {
     public interface IOrderRepository
     {
+        Task AddAsync(Order order);
         Task<int> CreateOrderAsync(Order order); 
         Task<Order> GetOrderByIdAsync(int id); 
         Task<IEnumerable<Order>> GetOrdersByStatusAsync(bool paid);

@@ -15,6 +15,11 @@ namespace ConcertTickets.Repositories
             _context = context;
         }
 
+        public Task AddAsync(Order order)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<int> CreateOrderAsync(Order order)
         {
             _context.Orders.Add(order);

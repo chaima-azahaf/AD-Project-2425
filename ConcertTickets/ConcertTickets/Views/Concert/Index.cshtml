@@ -1,35 +1,34 @@
 ﻿@model IEnumerable<ConcertTickets.ViewModels.ConcertViewModel>
 
-<h1>Concert overzicht</h1>
-<div class="row">
-    @foreach (var concert in Model)
-    {
-        <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="@concert.ArtistPictureUrl" alt="@concert.Artist">
-                <div class="card-body">
-                    <h5 class="card-title">@concert.Artist</h5>
-                    <p class="card-text">@concert.Location</p>
-                    <p class="card-text">@concert.Date.ToString("dd MMM yyyy")</p>
-                    <p class="card-text">
-                        <strong>@concert.TotalTicketsAvailable tickets beschikbaar</strong>
-                    </p>
-                    <a href="@Url.Action("Buy", "Concert", new { id = concert.Id })" class="btn btn-primary">
-                        @if (concert.TotalTicketsAvailable > 10)
+<div class="container">
+    <div class="row">
+        @foreach (var concert in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="@concert.ArtistPicture" class="card-img-top" alt="@concert.Artist">
+                    <div class="card-body">
+                        <div class="date-box">
+                            <h5 class="text-uppercase">@concert.Date.ToString("ddd").ToUpperInvariant()</h5> 
+                            <div class="day">@concert.Date.Day</div>
+                            <div class="month">@concert.Date.ToString("MMM. yyyy").ToUpperInvariant()</div>
+                        </div>
+                        <h5 class="card-title">@concert.Artist</h5>
+                        <p class="card-text">@concert.Location</p>
+
+                        @if (concert.TotalTicketsAvailable > 0)
                         {
-                            <span>Koop tickets</span>
-                        }
-                        else if (concert.TotalTicketsAvailable > 0)
-                        {
-                            <span>Laatste tickets!</span>
+                            var buttonClass = concert.TotalTicketsAvailable > 500 ? "btn-primary" : "btn-warning";
+                            var buttonText = concert.TotalTicketsAvailable > 500 ? "Koop tickets" : "Laatste tickets!";
+                            <a asp-action="Buy" asp-route-id="@concert.Id" class="btn @buttonClass">@buttonText</a>
                         }
                         else
                         {
-                            <span>Uitverkocht</span>
+                            <button class="btn btn-secondary" disabled>Uitverkocht</button>
                         }
-                    </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    }
+        }
+    </div>
 </div>

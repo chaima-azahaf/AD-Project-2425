@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "unPJn84KuzDDH3gz9bRsslmBoAozsLLAv8vrQZXR2PQ=",
+  "Hash": "EL29274qr4kHZ+SyjFhpdf7/yr29455OptT6618h/fc=",
   "Source": "ConcertTickets",
   "BasePath": "_content/ConcertTickets",
   "Mode": "Default",
@@ -1333,8 +1333,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "cvgoxrhnn4",
-      "Integrity": "aEjt3vPneVd+BVY8BjhfH+KGvNlIszii3vttWtkkk7w=",
+      "Fingerprint": "2ygajzmx8f",
+      "Integrity": "SnMYGnJ9CsFujz6SwZfV+ez7sDkHzQW4gJOyMt0GYZs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -2792,7 +2792,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 20:33:47 GMT"
+          "Value": "Fri, 17 Jan 2025 22:52:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2829,7 +2829,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 20:33:47 GMT"
+          "Value": "Fri, 17 Jan 2025 22:52:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2866,7 +2866,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 20:33:47 GMT"
+          "Value": "Fri, 17 Jan 2025 22:52:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2911,7 +2911,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 20:33:47 GMT"
+          "Value": "Fri, 17 Jan 2025 22:52:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2934,6 +2934,51 @@
       ]
     },
     {
+      "Route": "css/site.2ygajzmx8f.css",
+      "AssetFile": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4376"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SnMYGnJ9CsFujz6SwZfV+ez7sDkHzQW4gJOyMt0GYZs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Jan 2025 22:27:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2ygajzmx8f"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SnMYGnJ9CsFujz6SwZfV+ez7sDkHzQW4gJOyMt0GYZs="
+        }
+      ]
+    },
+    {
       "Route": "css/site.css",
       "AssetFile": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -2944,7 +2989,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "729"
+          "Value": "4376"
         },
         {
           "Name": "Content-Type",
@@ -2952,11 +2997,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aEjt3vPneVd+BVY8BjhfH+KGvNlIszii3vttWtkkk7w=\""
+          "Value": "\"SnMYGnJ9CsFujz6SwZfV+ez7sDkHzQW4gJOyMt0GYZs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 14:49:22 GMT"
+          "Value": "Fri, 17 Jan 2025 22:27:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2966,52 +3011,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-aEjt3vPneVd+BVY8BjhfH+KGvNlIszii3vttWtkkk7w="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.cvgoxrhnn4.css",
-      "AssetFile": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "729"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"aEjt3vPneVd+BVY8BjhfH+KGvNlIszii3vttWtkkk7w=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 14:49:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "cvgoxrhnn4"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-aEjt3vPneVd+BVY8BjhfH+KGvNlIszii3vttWtkkk7w="
+          "Value": "sha256-SnMYGnJ9CsFujz6SwZfV+ez7sDkHzQW4gJOyMt0GYZs="
         }
       ]
     },

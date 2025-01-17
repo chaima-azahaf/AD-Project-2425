@@ -2,17 +2,11 @@
 
 <div class="container mt-5">
     <div class="row">
-        <!-- Concert Information -->
         <div class="col-md-6">
             <div class="card">
                 <div class="card-body text-center">
-                    <!-- Concert Image -->
                     <img src="/img/concerts/@(Model.ConcertName).png" alt="@Model.ConcertName" class="img-fluid rounded">
-
-                    <!-- Concert Details -->
                     <h4 class="mt-3">@Model.ConcertName</h4>
-                    
-                    <!-- Date Box -->
                     <div class="date-box">
                         <h5 class="text-uppercase">@Model.ConcertDate.ToString("ddd").ToUpperInvariant()</h5>
                         <div class="day">@Model.ConcertDate.Day</div>
@@ -29,7 +23,6 @@
             </div>
         </div>
 
-        <!-- Ticket Form -->
         <div class="col-md-6">
             <div class="card">
                 <div class="card-body">
@@ -119,7 +112,6 @@
                 return true;
             });
 
-            // Update total amount when number of tickets changes
             $('#NumberOfTickets').on('change', function() {
                 var tickets = $(this).val();
                 var price = @Json.Serialize(Model.FinalPrice);
