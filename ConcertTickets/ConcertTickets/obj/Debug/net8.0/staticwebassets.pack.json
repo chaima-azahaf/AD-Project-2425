@@ -53,14 +53,6 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\wwwroot\\layout\\datebox.html",
-      "PackagePath": "staticwebassets\\layout\\datebox.html"
-    },
-    {
-      "Id": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\wwwroot\\layout\\style.css",
-      "PackagePath": "staticwebassets\\layout\\style.css"
-    },
-    {
       "Id": "C:\\Users\\chaia\\source\\repos\\AD-Project-2425\\ConcertTickets\\ConcertTickets\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },

@@ -12,7 +12,7 @@ namespace ConcertTickets.ViewModels
         public DateTime Date { get; set; }
         public string ArtistPicture { get; set; }
         public List<TicketOfferViewModel> TicketOffers { get; set; }
-        public string ArtistPictureUrl => $"/images/artists/{ArtistPicture.Replace(" ", "").ToLower()}.jpg";
+        public string ArtistPictureUrl => $"/img/{Artist.Replace(" ", "").ToLower()}.png";
 
         public int TotalTicketsAvailable { get; set; }
     }
@@ -29,5 +29,6 @@ namespace ConcertTickets.ViewModels
         public string ConcertName { get; internal set; }
         public Concert Concert { get; internal set; }
         public double FinalPrice { get; internal set; }
+        public string ConcertLocation { get; internal set; }
     }
 }

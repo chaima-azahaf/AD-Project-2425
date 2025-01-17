@@ -36,15 +36,24 @@ namespace ConcertTickets.Repositories
                 .Where(o => o.Paid == paid)
                 .ToListAsync();
         }
+        
 
-        public async Task UpdateOrderPaidStatusAsync(int orderId, bool paid)
+        //admin
+
+        public async Task<IEnumerable<Order>> GetUnpaidOrdersAsync()
+        {
+            return await _context.Orders.Where(o => !o.Paid).ToListAsync();
+        }
+
+        public async Task UpdateOrderPaidStatusAsync(int orderId, bool isPaid)
         {
             var order = await _context.Orders.FindAsync(orderId);
             if (order != null)
             {
-                order.Paid = paid;
+                order.Paid = isPaid;
                 await _context.SaveChangesAsync();
             }
         }
+
     }
 }

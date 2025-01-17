@@ -69,5 +69,29 @@ namespace ConcertTickets.Services
         {
             await _orderRepository.UpdateOrderPaidStatusAsync(orderId, paid);
         }
+
+        //admin
+        public async Task<IEnumerable<OrderViewModel>> GetUnpaidOrdersAsync()
+        {
+            var orders = await _orderRepository.GetUnpaidOrdersAsync();
+            return orders.Select(o => new OrderViewModel
+            {
+                Id = o.Id,
+                ConcertName = o.TicketOffer.Concert.Artist,
+                ConcertDate = (DateTime)o.ConcertDate,
+                TicketType = o.TicketType,
+                NumberOfTickets = o.NumberOfTickets,
+                TotalPrice = (decimal)o.TotalPrice,
+                HasMemberCard = o.HasMemberCard,
+                UserName = o.UserName,
+                Paid = o.Paid
+            });
+        }
+
+        public async Task SetOrderPaidAsync(int orderId, bool isPaid)
+        {
+            await _orderRepository.UpdateOrderPaidStatusAsync(orderId, isPaid);
+        }
+
     }
 }

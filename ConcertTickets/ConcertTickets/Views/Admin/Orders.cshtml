@@ -1,0 +1,38 @@
+﻿@model IEnumerable<ConcertTickets.ViewModels.OrderViewModel>
+
+<div class="container mt-5">
+    <h2>Overzicht bestellingen</h2>
+    <p>Bestellingen die wachten op bevestiging betaling.</p>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Concert</th>
+                <th>Ticket type</th>
+                <th>Aantal tickets</th>
+                <th>Totale prijs</th>
+                <th>Korting</th>
+                <th>Klant</th>
+                <th>Betaald</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in Model)
+            {
+                <tr>
+                    <td>@order.ConcertName - @order.ConcertDate.ToString("dd/MM/yyyy")</td>
+                    <td>@order.TicketType</td>
+                    <td>@order.NumberOfTickets</td>
+                    <td>&euro; @order.TotalPrice</td>
+                    <td>@(order.HasMemberCard ? "Ja" : "Nee")</td>
+                    <td>@order.UserName</td>
+                    <td>
+                        <form asp-action="SetPaid" asp-controller="Admin" method="post">
+                            <input type="hidden" name="id" value="@order.Id" />
+                            <button type="submit" class="btn btn-primary">Bevestig betaling</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

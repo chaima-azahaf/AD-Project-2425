@@ -10,8 +10,6 @@ wwwroot\img\OdiseeConcertsLogo.png
 wwwroot\img\TaylorSwift.png
 wwwroot\img\TheLastDinnerParty.png
 wwwroot\js\site.js
-wwwroot\layout\datebox.html
-wwwroot\layout\style.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap.min.css

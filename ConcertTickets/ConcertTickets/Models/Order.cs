@@ -1,4 +1,6 @@
-﻿namespace ConcertTickets.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace ConcertTickets.Models
 {
     public class Order
     {
@@ -14,6 +16,10 @@
         public int TicketOfferId { get; set; }
         public TicketOffer TicketOffer { get; set; }
         public int NumberOfTickets { get; internal set; }
+        public bool HasMemberCard { get; internal set; }
+        public string TicketType { get; internal set; }
+        [NotMapped]
+        public object ConcertDate { get; internal set; }
     }
 
 }

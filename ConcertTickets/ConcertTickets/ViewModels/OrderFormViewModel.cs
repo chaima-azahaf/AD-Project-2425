@@ -7,18 +7,21 @@ namespace ConcertTickets.ViewModels
     {
         public int TicketOfferId { get; set; }
 
+        [Required]
         public string TicketType { get; set; }
 
-        public decimal Price { get; set; }
+        // Supprimons Price et gardons uniquement FinalPrice
+        public double FinalPrice { get; set; }
 
         public int AvailableTickets { get; set; }
 
+        [Required]
         public string ConcertName { get; set; }
 
+        [Required]
         public DateTime ConcertDate { get; set; }
 
         public string ConcertLocation { get; set; }
-
         public bool HasMemberCard { get; set; }
 
         [Required(ErrorMessage = "Geef het aantal gewenste tickets in (minimaal 1, maximaal 5).")]
@@ -27,8 +30,8 @@ namespace ConcertTickets.ViewModels
 
         [Required(ErrorMessage = "Je moet akkoord gaan met de algemene voorwaarden.")]
         public bool AcceptTerms { get; set; }
-        public string UserId { get; internal set; }
-        public string UserName { get; internal set; }
-        public double FinalPrice { get; internal set; }
+
+        public string UserId { get; set; }
+        public string UserName { get; set; }
     }
 }

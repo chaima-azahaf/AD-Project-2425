@@ -3,6 +3,7 @@ using ConcertTickets.Repositories;
 using ConcertTickets.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace ConcertTickets
 {
@@ -40,9 +41,15 @@ namespace ConcertTickets
 
             builder.Services.AddControllersWithViews();
             builder.Services.AddRazorPages();
+            builder.Services.AddAuthorization(options =>
+            {
+                options.AddPolicy("AdminOnly", policy =>
+                    policy.RequireClaim("IsAdmin", "true")); // Policy vereist dat de gebruiker de claim "IsAdmin" heeft met de waarde "true".
+
+            });
 
             var app = builder.Build();
-
+            SeedClaimsAsync(app.Services).GetAwaiter().GetResult();
             if (app.Environment.IsDevelopment())
             {
                 app.UseMigrationsEndPoint();
@@ -64,52 +71,45 @@ namespace ConcertTickets
 
             app.MapRazorPages();
 
-            // Seeding admin user
-            using (var scope = app.Services.CreateScope())
-            {
-                var services = scope.ServiceProvider;
-                try
-                {
-                    var userManager = services.GetRequiredService<UserManager<CustomUser>>();
-                    var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
-
-                    await SeedAdminUserAsync(userManager, roleManager);
-                }
-                catch (Exception ex)
-                {
-                    var logger = services.GetRequiredService<ILogger<Program>>();
-                    logger.LogError(ex, "Er is een fout opgetreden bij het seeden van de database.");
-                }
-            }
-
             app.Run();
         }
 
-        private static async Task SeedAdminUserAsync(UserManager<CustomUser> userManager, RoleManager<IdentityRole> roleManager)
+        static async Task SeedClaimsAsync(IServiceProvider serviceProvider)
         {
-            if (!await roleManager.RoleExistsAsync("Admin"))
-            {
-                await roleManager.CreateAsync(new IdentityRole("Admin"));
-            }
+            const string ADMIN_ACCOUNT = "admin@test.be";
+            const string ADMIN_PASSWORD = "Admin@123";
+            using var scope = serviceProvider.CreateScope();
+            var userManager = scope.ServiceProvider.GetRequiredService<UserManager<CustomUser>>();
 
-            if (await userManager.FindByEmailAsync("admin@concerttickets.com") == null)
+            var user = await userManager.FindByEmailAsync(ADMIN_ACCOUNT);
+            if (user == null)
             {
-                var adminUser = new CustomUser
+                // Optioneel: maak een standaardgebruiker aan als die niet bestaat
+                user = new CustomUser
                 {
-                    UserName = "admin@concerttickets.com",
-                    Email = "admin@concerttickets.com",
                     FirstName = "Admin",
-                    LastName = "Gebruiker",
+                    LastName = "User",
+                    UserName = ADMIN_ACCOUNT,
+                    Email = ADMIN_ACCOUNT,
                     EmailConfirmed = true
                 };
+                await userManager.CreateAsync(user, ADMIN_PASSWORD); // Standaard wachtwoord
+            }
 
-                var result = await userManager.CreateAsync(adminUser, "Admin@123");
+            // Voeg claims toe aan de gebruiker
+            var claims = new[]
+            {
+                new Claim("IsAdmin", "true"),
+            };
 
-                if (result.Succeeded)
+            foreach (var claim in claims)
+            {
+                if (!(await userManager.GetClaimsAsync(user)).Any(c => c.Type == claim.Type))
                 {
-                    await userManager.AddToRoleAsync(adminUser, "Admin");
+                    await userManager.AddClaimAsync(user, claim);
                 }
             }
         }
+
     }
 }

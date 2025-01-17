@@ -10,7 +10,8 @@
         public bool Paid { get; set; }
         public int OrderId { get; internal set; }
         public string ConcertName { get; internal set; }
-        public object ConcertDate { get; internal set; }
+        public DateTime ConcertDate { get; set; }
         public bool HasMemberCard { get; internal set; }
+        public object OrderDate { get; internal set; }
     }
 }

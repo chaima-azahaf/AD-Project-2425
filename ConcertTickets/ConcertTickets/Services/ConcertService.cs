@@ -33,7 +33,7 @@ namespace ConcertTickets.Services
                 Artist = c.Artist,
                 Location = c.Location,
                 Date = c.Date,
-                ArtistPicture = $"/images/{c.Artist.Replace(" ", string.Empty)}.jpg",
+                ArtistPicture = $"/img/{c.Artist.Replace(" ", string.Empty)}.png",
                 TotalTicketsAvailable = c.TicketOffers?.Sum(to => to.NumTickets) ?? 0
             }).ToList();
         }
@@ -61,7 +61,7 @@ namespace ConcertTickets.Services
                 Artist = concert.Artist,
                 Location = concert.Location,
                 Date = concert.Date,
-                ArtistPicture = $"/images/{concert.Artist.Replace(" ", string.Empty)}.jpg",
+                ArtistPicture = $"/img/{concert.Artist.Replace(" ", string.Empty)}.png",
                 TicketOffers = concert.TicketOffers.Select(to => new TicketOfferViewModel
                 {
                     Id = to.Id,
